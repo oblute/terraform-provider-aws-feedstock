@@ -1,12 +1,12 @@
 {% set provider= "aws" %}
-{% set version = "1.11.0" %}
+{% set version = "1.12.0" %}
 
 {% set name = "terraform-provider-" + provider %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
-{% set sha256 = "ebc62be1a0009b12436d130521393f8b5f81427d8242f596f249e8dc4b211fe1" %}
-{% set sha256_win32 = "7706ad5446b607eddf04e265eb2fc0f3cd30d353bd7b2df3c148c87bbbb7f038" %}
-{% set sha256_win64 = "73cdb0ad7465c72ccc6fa0d164a9f1f0e4b3d181def00df8f9e1fc4bf53072d4" %}
+{% set sha256 = "e4e77ea97b3b5d1c4ac4b19fe8860e6bf1635cd0d4dc042efb8589b7bb7688ab" %}
+{% set sha256_win32 = "6db0f5f5032546bb65a816fac6b8a32037639cb3ccd8dd2a93b3223fbb7f1f7e" %}
+{% set sha256_win64 = "666e76c769a2ae645aa1b3736aac838b3bead5bfbe9428ff603fd0cb1d2f6875" %}
 
 package:
   name: {{ name|lower }}
@@ -46,7 +46,7 @@ about:
   license: MPL 2.0
   summary: The Terraform AWS provider
   doc_url: https://www.terraform.io/docs/providers/{{ provider }}/index.html
-  dev_url: https://https://github.com/terraform-providers/{{ name }}
+  dev_url: https://github.com/terraform-providers/{{ name }}
 
 extra:
   recipe-maintainers:
