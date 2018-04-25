@@ -1,10 +1,10 @@
 {% set provider= "aws" %}
-{% set version = "1.14.1" %}
+{% set version = "1.16.0" %}
 
 {% set name = "terraform-provider-" + provider %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
-{% set sha256 = "7fa887e25dafd9e9d6cc6132a877d81f33e2aa33c3ce52c5f5a036592214d6e5" %}
+{% set sha256 = "8804647db6ab5e36f9c838118ee310cf9d2627ac40ddc0a52fccc95224e97f9f" %}
 {% set sha256_win32 = "ce19f6f356c3992621969690ae2acff923a9f5d367833ed5bafea52bd37b6d9b" %}
 {% set sha256_win64 = "57243468e33a5091e14320fba4d344dc1619a30822fc90f2d46c0cbfeb672fb0" %}
 
