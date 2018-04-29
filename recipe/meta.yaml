@@ -1,4 +1,4 @@
-{% set provider= "aws" %}
+{% set provider = "aws" %}
 {% set version = "1.16.0" %}
 
 {% set name = "terraform-provider-" + provider %}
