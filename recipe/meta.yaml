@@ -1,5 +1,5 @@
 {% set provider = "aws" %}
-{% set version = "1.33.0" %}
+{% set version = "1.37.0" %}
 
 {% set name = "terraform-provider-" + provider %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
@@ -11,13 +11,13 @@ package:
 source:
   - folder: src/github.com/terraform-providers/{{ name|lower }}
     url: https://github.com/terraform-providers/{{ name }}/archive/v{{ version }}.tar.gz  # [not win]
-    sha256: e38ffe8d5089c880c1227c002826865a398df30f820d99e36e245bd0c62c7618  # [not win]
+    sha256: 51fd45a272f7811d0360ba9d0c3d1df4cd85069fcf13e536be9645e579c35ce0  # [not win]
 
     url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_amd64.zip  # [win64]
-    sha256: 990ad78e2f378feddef6c3a1143b31776acb2b6d29c10412739b4d9d7daf8bb2  # [win64]
+    sha256: 769d3df5196f459755accec64f31bd859ab27a49911feff73c3f0f35d00e9335  # [win64]
 
 build:
-  number: 1000
+  number: 0
   script:
     - XCOPY src\github.com\terraform-providers\{{ name|lower }}\{{ x4_plugin }}.exe %LIBRARY_BIN%  # [win]
 
