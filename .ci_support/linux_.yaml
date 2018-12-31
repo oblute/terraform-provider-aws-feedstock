@@ -8,6 +8,10 @@ docker_image:
 - condaforge/linux-anvil-comp7
 go_compiler:
 - go-nocgo
+goarch:
+- amd64
+goos:
+- linux
 zip_keys:
 - - channel_sources
   - channel_targets
