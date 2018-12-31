@@ -10,6 +10,10 @@ docker_image:
 - condaforge/linux-anvil
 go_compiler:
 - go-nocgo
+goarch:
+- amd64
+goos:
+- darwin
 macos_machine:
 - x86_64-apple-darwin13.4.0
 macos_min_version:
