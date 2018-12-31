@@ -1,0 +1,4 @@
+go_compiler:
+  - go-nocgo
+cgo_compiler:
+  - go-cgo
